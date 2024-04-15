@@ -1,3 +1,4 @@
+import Link from "next/link";
 import clientPromise from "../../lib/mongodb";
 import { GetServerSideProps } from "next";
 
@@ -26,6 +27,7 @@ interface UsersProps {
 const Users: React.FC<UsersProps> = ({ users }) => {
 	return (
 		<div>
+			<Link href="/clientcomp/AddUser">ADD USER</Link>
 			<h1>Users List from server side components</h1>
 			<p>
 				<small>My Users list</small>
