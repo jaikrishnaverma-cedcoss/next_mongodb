@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps<
 			props: { isConnected: true },
 		};
 	} catch (e) {
-		console.error(e , 'asdas');
+		console.error(e);
 		return {
 			props: { isConnected: false },
 		};
